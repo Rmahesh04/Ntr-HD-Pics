@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Black background */
+    color: white;
+}
+
+header {
+    background-image: url('jr-ntr-background.jpg'); /* Background image of JR NTR */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#movies {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.movie p {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* For mobile users, 2 movies in a row */
+@media only screen and (max-width: 600px) {
+    #movies {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Movie photos page */
+#movie-photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+#back-button {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.download-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 12px;
+    color: gray;
+}
+
+/* For mobile users, 2 photos in a row */
+@media only screen and (max-width: 600px) {
+    #movie-photos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
